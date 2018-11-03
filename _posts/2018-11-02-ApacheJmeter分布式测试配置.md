@@ -1,4 +1,4 @@
-## Jmeter分布式测试
+## Jmeter分布式测试（一）
 搭建Jmeter完成分布式测试，需要机器满足下面几个条件：
 + 确保客户端（提供负载的机器）可以正常连接服务器（防火墙/网段设置等）
 + 确保所有客户端的java/jemeter版本相同。版本不同，有可能会出错
@@ -20,26 +20,26 @@
 	server.rmi.ssl.disable=true
 	```
 
++ 配置RMI SSL（如果不禁用SSL，需要进行下面的配置）
+	- 运行Master上面“jemter\bin\create-rmi-keystore.bat”(linux上create-rmi-keystore.sh)
+	- 回复一些问题（可以使用默认值）
+	- 脚本会在Master的“jemter\bin\”下面生成一个key文件：rmi_keystore.jks
+	- 将这个文件复制到所有Slave机的“jemter\bin\”目录下
+
 + 让Slave机器RMI使用固定端口，修改修改Slave机器上jmeter\bin\user.prorerties文件
 	```bash
 	# user.prorerties
 	server.rmi.localport=44242
 	```
 
-+ 配置RMI SSL
-	- 运行Master上面“jemter\bin\create-rmi-keystore.bat”(linux上create-rmi-keystore.sh)
-	- 回复一些问题（可以使用默认值）
-	- 脚本会在Master的“jemter\bin\”下面生成一个key文件：rmi_keystore.jks
-	- 将这个文件复制到所有Slave机的“jemter\bin\”目录下
-
-+ 在Master上配置远程机器，修改“jmeter\bin\user.prorerties”文件，
++ 在Master上配置远程机器，修改“jmeter\bin\user.prorerties”文件，配置远程机器以后，GUI模式启动Jmeter才可以看到相应的远程机器
 	```ini
 	# 添加下面这一行,ip地址为Slave机器ip地址,如果有多台,用英文逗号分隔
 	remote_hosts=172.16.3.138
 	```
 
 + 多个网卡配置   
-	有多个网卡时，必须指定网卡，否则会很可能会出现RMI通讯时并不是你期望的网卡   
+	有多个网卡时，必须指定网卡，否则会很可能会出现RMI通讯时并不是你期望的网卡，导致测试失败   
 
 	- windows下修改jmeter\bin\jmeter.bat
 	```
