@@ -1,11 +1,11 @@
 ## ApacheJmeter5.0 录制脚本
 
-Jmeter脚本录制，可以：
+Jmeter脚本录制，一般有下面几种方式：
 1. 用badboy录制后导出
 2. 用jmeter自已直接录制
 3. 通过BlazeMeter录制后导出。   
 
-本篇只讲通过Jmeter自已录制。ApacheJmeter5.0 版本的录制方式比以前版本简单很多，本篇录制基于5.0版本。
+本篇只讲通过Jmeter自已录制。本篇录制基于5.0版本，和其他版本可能会有些出入。
 
 ### 录制过程
 1. 以GUI模式启动Jmeter
