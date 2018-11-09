@@ -1,6 +1,6 @@
 ## ApacheJmeter各Element介绍（二）：Thread Group
 
-[TestPlan]:https://autophyte.github.io/2018/11/08/ApacheJmeter%E5%85%83%E4%BB%B6%E4%BB%8B%E7%BB%8D.html
+[TestPlan]:https://autophyte.github.io/2018/11/08/Jmeter%E5%90%84Element%E4%BB%8B%E7%BB%8D1.html
 
 
 ### Thread Group（线程组）介绍
