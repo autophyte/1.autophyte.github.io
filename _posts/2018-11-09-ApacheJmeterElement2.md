@@ -10,7 +10,7 @@
 3. 测试所需要的controller和sampler都必须放在Thread Group下。   
 4. 其他的，如Listener可以直接放在[TestPlan]下（listener放在Test Plan下和放在Thread Group下时，作用于不同）   
 6. 右键点击[TestPlan]->Add->Threads(Users)->Thread Group，可以给[TestPlan]添加一个Thread Group     
-![添加ThreadGroup](./img/jmeter/JmeterElements_ThreadGroup_add.png)   
+![添加ThreadGroup](/img/jmeter/JmeterElements_ThreadGroup_add.png)   
 7. 每一个[TestPlan]下可以放多个Thread Group，这些Thread Group的执行顺序可以在[TestPlan]中控制   
 
 
@@ -38,4 +38,4 @@
 	+ Stop Test：在执行完后续动作以后，结束测试。意味着线程动作列表中，错误动作后面的动作还会做，直到当前循环完成，再结束测试
 	+ Stop Test Now：立刻停止测试，错误的动作后面的动作也不要做了
 
-![ThreadGroup配置](./img/jmeter/JmeterElements_TestPlan_config.png)
+![ThreadGroup配置](/img/jmeter/JmeterElements_TestPlan_config.png)
