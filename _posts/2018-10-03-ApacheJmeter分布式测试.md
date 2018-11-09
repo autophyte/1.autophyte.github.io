@@ -1,9 +1,12 @@
 ## Jmeter分布式测试（二）
 
-### 开始分布式测试
-前面的文章，我们已经完成Jmeter分布式测试相关配置，现在准备开始做分布式测试（注意，不需要将testplan手动复制到每一个slave机器上，master会自动分发）。
+[配置]:https://autophyte.github.io/2018/11/02/ApacheJmeter%E5%88%86%E5%B8%83%E5%BC%8F%E6%B5%8B%E8%AF%95%E9%85%8D%E7%BD%AE.html
+[ApacheJmeter的运行模式]:https://autophyte.github.io/2018/11/02/ApacheJmeter%E5%90%AF%E5%8A%A8.html
 
-1. 在GUI模式中准备脚本。
+### 开始分布式测试
+前面的文章，我们已经完成Jmeter分布式测试相关[配置]，现在准备开始做分布式测试（注意，不需要将testplan手动复制到每一个slave机器上，master会自动分发）。
+
+1. 在GUI模式中准备脚本(请参考[ApacheJmeter的运行模式])。
 2. 在所有需要用到的slave机器上启动jmeter服务器模式   
 	![服务器模式截图](/img/jmeter/start_jmeter_server.png "Jmeter5.0 服务器模式")
 3. 在Master中以GUI方式启动jmeter

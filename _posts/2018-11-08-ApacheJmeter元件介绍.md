@@ -1,7 +1,7 @@
-##ApacheJmeter各Element介绍（一）
+## ApacheJmeter各Element介绍（一）：TestPlan
 
-### TestPlan
-TestPlan是Jmeter测试用例的“根”，我们所有的测试过程都在TestPlan中进行，每一个TestPlan可以看作是一个“项目”。Jmeter启动时，我们所看到的就是TestPlan。   
+### TestPlan介绍
+TestPlan是Jmeter测试用例的“根”，我们所有的测试过程都在TestPlan中进行，每一个TestPlan可以看作是一个“项目”，其它所有element都必须在TestPlan下。Jmeter启动时，我们所看到的就是TestPlan。   
 ![TestPlan](/img/jmeter/JmeterElements_TestPlan.png "TestPlan")   
 
 * TestPlan中有一个选项“Functional Test Mode”，这个选项默认时未被选中的。
