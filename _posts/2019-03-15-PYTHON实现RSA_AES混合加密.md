@@ -1,4 +1,4 @@
-## PYTHON RSA+AES混合加密
+## Python3 RSA+AES混合加密
 
 为啥要用RSA+AES混合加密？安全和速度的妥协呗，RSA更安全但是速度实在太慢
 
@@ -27,7 +27,8 @@
 
 
 ### 上代码
-```
+
+```python
 import base64
 import os
 
