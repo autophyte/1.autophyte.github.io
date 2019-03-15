@@ -32,6 +32,7 @@
 import base64
 import os
 
+# Crypto安装命令：`pip3 install -i https://pypi.douban.com/simple pycryptodome`
 from Crypto import Random
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_v1_5 as Cipher_pkcs1_v1_5
@@ -129,3 +130,5 @@ if __name__ == "__main__":
     print("解密数据： {decrypt_msg}".format(decrypt_msg=msg))
 ```
 
+### 运行上面代码
+![RSA/AES混合加密](/img/Python/python_rsa_aes_result.png)
