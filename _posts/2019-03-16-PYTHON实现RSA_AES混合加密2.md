@@ -1,4 +1,4 @@
-## Python3 RSA+AES混合加密（二）————加检验
+## Python3 RSA+AES混合加密（二）——加检验
 
 [前文(Python实现rsa_aes混合加密)](https://autophyte.github.io/2019/03/15/PYTHON%E5%AE%9E%E7%8E%B0RSA_AES%E6%B7%B7%E5%90%88%E5%8A%A0%E5%AF%86.html)中已经实现了RSA+AES混合加密，但是这个加密是单向且没有进行安全校验的，也意味着，任何人都可以伪装成发送者向接收着发送伪装的信息，因为公钥是公开的。改进的方式就是发送方使用自已的么钥对数据进行签名
 
