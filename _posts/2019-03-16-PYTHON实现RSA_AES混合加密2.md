@@ -223,6 +223,15 @@ if __name__ == "__main__":
     msg = receiver.decrypt(value)
     print("解密数据： {decrypt_msg}".format(decrypt_msg=msg.decode("utf-8")))
 
+    print("\n\n")
+    message = "这是一个client返回给server的信息"
+    print("原始数据： {origin_msg}".format(origin_msg=message))
+    value = receiver.encrypt(message.encode("utf-8"))
+    print("密文数据： {encrypt_msg}".format(
+        encrypt_msg=json.dumps(value, indent=4)))
+    msg = sender.decrypt(value)
+    print("解密数据： {decrypt_msg}".format(decrypt_msg=msg.decode("utf-8")))
+
 ```
 
 ### 运行上面代码
